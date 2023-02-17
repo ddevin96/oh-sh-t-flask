@@ -5,13 +5,13 @@
         python3 -m venv venv
         . venv/bin/activate
         pip install Flask
-    ```
+        ```
 # running
 
-    ```sh 
-    . venv/bin/activate
-    flask run
-    ```
+```sh 
+. venv/bin/activate
+flask run
+```
 
 # structure of API
 
