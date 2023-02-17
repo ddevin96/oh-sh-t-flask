@@ -1,13 +1,14 @@
 # setup
 
 - MacOS
-    - python3 -m venv venv
-    - . venv/bin/activate
-    - pip install Flask
-
+    - ```sh
+        python3 -m venv venv
+        . venv/bin/activate
+        pip install Flask
+    ```
 # running
 
-    ```bash 
+    ```sh 
     . venv/bin/activate
     flask run
     ```
