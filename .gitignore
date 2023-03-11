@@ -139,3 +139,5 @@ dmypy.json
 .idea/
 docs/_build/
 .vscode
+
+*.h5
