@@ -61,32 +61,20 @@ def predict_line():
     
     prediction = model.predict(token)
 
-    if prediction[0][0] < 0.5:
-        print(" < 0.5 Prediction:", prediction[0][0])
+    if prediction[0][0] > 0.5:
+        print(" > 0.5 Prediction:", prediction[0][0])
         return {
             "malignant": True
         }
     else:
-        print(" > 0.5 Prediction:", prediction[0][0])
         return {
             "malignant": False
         }
-    
-# @app.route("/predictline", methods=["POST"])
-# @cross_origin()
-# def predict_line():
-#     j = request.get_json()
-#     # pick value from json
-#     t = j.get("textToAnalyze")
-#     # base64 decode
-#     t = base64.b64decode(t).decode("utf-8")
-#     print(t)
-#     return {
-#         "malignant": True
-#     }
+
 
 @app.route("/predictpage", methods=["POST"])
 def predict_page():
+    # WIP  
     j = request.get_json()
     print(j)
     return {

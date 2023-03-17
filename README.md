@@ -1,11 +1,11 @@
 # info
 
-project for phd course CITR --
+project for Ph.D. course CITR
 refer also to
-https://github.com/piscitelli91/oh-sh-t
-https://github.com/gilbertrec/TR_CI2023-CyberBullying
+- Chrome extension [oh-shi-t](https://github.com/piscitelli91/oh-sh-t)
+- AI Model [model](https://github.com/gilbertrec/TR_CI2023-CyberBullying)
 
-# setup
+# setup for Flask
 
 - MacOS
     - ```sh
@@ -25,10 +25,8 @@ flask run
 POST API -- http://127.0.0.1:5000/predict_line
 
 - input: {"textToAnalyze": "text"}
-- output: {"prediction": "0"}
+- output: {"malignant": boolean}
+  - if output > 0.5 return true, meaning text is malignant
 
-POST API -- http://127.0.0.1:5000/predict_page
-
-- input: {"texts": ["text1", "text2"]}
-- output: {"predictions": ["0", "1"]}
+WIP -- POST API -- http://127.0.0.1:5000/predict_page
 
